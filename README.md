@@ -3,7 +3,7 @@
 
 > **Enseña lo que sabes. Aprende lo que necesitas. Sin gastar un sol.**
 
-SkillSwap es una plataforma de intercambio de conocimientos entre estudiantes universitarios. En lugar de pagar tutorías caras o quedarte con la duda, conectas con otro estudiante que sabe lo que tú necesitas — y le enseñas algo a cambio.
+OnlySwapX es una plataforma de intercambio de conocimientos entre estudiantes universitarios. En lugar de pagar tutorías caras o quedarte con la duda, conectas con otro estudiante que sabe lo que tú necesitas — y le enseñas algo a cambio.
 
 ---
 
@@ -11,7 +11,7 @@ SkillSwap es una plataforma de intercambio de conocimientos entre estudiantes un
 
 Cada facultad tiene estudiantes que dominan algo que los de otra carrera necesitan desesperadamente antes de un examen. El problema no es la falta de conocimiento — es que no existe una forma confiable de encontrar a esa persona, verificar que realmente sabe, y hacer el intercambio sin que nadie salga perdiendo.
 
-SkillSwap resuelve exactamente eso.
+OnlySwapX resuelve exactamente eso.
 
 ---
 
@@ -61,13 +61,11 @@ SkillSwap resuelve exactamente eso.
 Java 17 + Spring Boot 3
 ├── Spring Security + JWT
 ├── Spring Data JPA + Hibernate
-├── Spring Events (@Async) — para operaciones lentas
-└── PostgreSQL (via Supabase)
+└── Spring Events (@Async) — para operaciones lentas
 ```
 
 ### Servicios externos
 ```
-Supabase          → Base de datos PostgreSQL, Storage (PDFs), Auth
 Google Gemini API → Extracción de datos del historial académico + generación de quiz
 pgvector          → Búsqueda semántica de similitud para el motor de matching
 Resend API        → Correos transaccionales (matches, confirmaciones, alertas)
@@ -78,8 +76,8 @@ Resend API        → Correos transaccionales (matches, confirmaciones, alertas)
 ## Arquitectura del backend
 
 ```
-skillswap-backend/
-└── src/main/java/com/skillswap/
+onlyswapx-backend/
+└── src/main/java/com/onlyswapx/
     ├── config/          # Seguridad, async, clientes externos
     ├── domain/          # Entidades JPA
     ├── repository/      # Acceso a datos (JPA + queries nativas pgvector)
@@ -196,8 +194,15 @@ Las siguientes operaciones se procesan en background y **nunca bloquean la respu
 
 ## Equipo
 
-Proyecto desarrollado como parte del curso de Desarrollo Backend — Universidad [nombre].
+Proyecto desarrollado como parte del curso de Desarrollo Basado en Plataformas 
+- **Diego Godoy**
+- **Leonardo** 
+- **Valentino Gamboa**
+- **Pedro Solis**
+- **Thiago Frias**
+
+*Universidad de Ingenieria y Tecnologia - UTEC.*
 
 ---
 
-*SkillSwap — Porque el conocimiento vale más cuando se comparte.*
+*OnlySwapX — Porque el conocimiento vale más cuando se comparte.*

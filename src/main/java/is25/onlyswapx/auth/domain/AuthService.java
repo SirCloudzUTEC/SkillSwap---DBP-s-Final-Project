@@ -5,7 +5,7 @@ import is25.onlyswapx.auth.dto.SignInRequest;
 import is25.onlyswapx.auth.dto.SignUpRequest;
 import is25.onlyswapx.auth.dto.TokenResponse;
 import is25.onlyswapx.user.domain.User;
-import is25.onlyswapx.user.infraestructure.UserRepository;
+import is25.onlyswapx.user.infrastructure.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

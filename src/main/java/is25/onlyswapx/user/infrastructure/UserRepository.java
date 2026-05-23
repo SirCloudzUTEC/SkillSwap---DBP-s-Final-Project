@@ -1,4 +1,4 @@
-package is25.onlyswapx.user.infraestructure;
+package is25.onlyswapx.user.infrastructure;
 
 import is25.onlyswapx.user.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;

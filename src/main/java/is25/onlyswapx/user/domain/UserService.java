@@ -1,7 +1,7 @@
 package is25.onlyswapx.user.domain;
 
 import is25.onlyswapx.user.dto.UserResponse;
-import is25.onlyswapx.user.infraestructure.UserRepository;
+import is25.onlyswapx.user.infrastructure.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

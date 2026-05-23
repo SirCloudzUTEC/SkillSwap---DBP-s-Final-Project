@@ -1,4 +1,4 @@
-package is25.onlyswapx;
+package onlyswapx;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

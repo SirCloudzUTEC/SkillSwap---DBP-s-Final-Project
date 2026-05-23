@@ -1,8 +1,8 @@
-package is25.onlyswapx.review.application;
+package com.onlyswapx.review.application;
 
-import is25.onlyswapx.review.domain.ReviewService;
-import is25.onlyswapx.review.dto.ReviewRequest;
-import is25.onlyswapx.review.dto.ReviewResponse;
+import com.onlyswapx.review.domain.ReviewService;
+import com.onlyswapx.review.dto.ReviewRequest;
+import com.onlyswapx.review.dto.ReviewResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

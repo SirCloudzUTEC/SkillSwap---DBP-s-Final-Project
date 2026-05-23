@@ -1,4 +1,4 @@
-package is25.onlyswapx.user.infraestructure;
+package com.onlyswapx.user.infrastructure;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package is25.onlyswapx.review.dto;
+package com.onlyswapx.review.dto;
 
 import lombok.*;
 import java.time.LocalDateTime;

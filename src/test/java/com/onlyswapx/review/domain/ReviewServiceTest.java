@@ -1,10 +1,10 @@
-package is25.onlyswapx.review.domain;
+package com.onlyswapx.review.domain;
 
-import is25.onlyswapx.review.dto.ReviewRequest;
-import is25.onlyswapx.review.dto.ReviewResponse;
-import is25.onlyswapx.review.infraestructure.ReviewRepository;
-import is25.onlyswapx.user.domain.User;
-import is25.onlyswapx.user.infraestructure.UserRepository;
+import com.onlyswapx.review.dto.ReviewRequest;
+import com.onlyswapx.review.dto.ReviewResponse;
+import com.onlyswapx.review.infrastructure.ReviewRepository;
+import com.onlyswapx.user.domain.User;
+import com.onlyswapx.user.infrastructure.UserRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,6 +1,6 @@
-package is25.onlyswapx.review.domain;
+package com.onlyswapx.review.domain;
 
-import is25.onlyswapx.user.domain.User;
+import com.onlyswapx.user.domain.User;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;

@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.5</version>
+        <version>4.0.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>is25</groupId>
-    <artifactId>OnlySwapX</artifactId>
+    <groupId>com.onlyswapx</groupId>
+    <artifactId>onlyswapx</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SkillSwap-DBP-Final Project</name>
-    <description>SkillSwap-DBP-Final Project</description>
+    <name>onlyswapx</name>
+    <description>onlyswapx</description>
     <url/>
     <licenses>
         <license/>
@@ -72,6 +72,7 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+        <!-- JWT -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa-test</artifactId>

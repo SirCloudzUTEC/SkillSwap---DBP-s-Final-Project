@@ -4,7 +4,7 @@ import com.onlyswapx.skill.dto.SkillRequest;
 import com.onlyswapx.skill.dto.SkillResponse;
 import com.onlyswapx.skill.infraestructure.SkillRepository;
 import com.onlyswapx.user.domain.User;
-import is25.onlyswapx.user.infraestructure.UserRepository;
+import com.onlyswapx.user.infrastructure.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

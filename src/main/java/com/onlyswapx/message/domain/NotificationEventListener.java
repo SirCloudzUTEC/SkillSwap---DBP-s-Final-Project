@@ -1,5 +1,6 @@
 package com.onlyswapx.message.domain;
 
+import com.onlyswapx.session.domain.SessionCompletedEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package com.onlyswapx.message.domain;
 
-import com.onlyswapx.domain.ExchangeRequest;
+import com.onlyswapx.exchange.domain.ExchangeRequest;
 import com.onlyswapx.user.domain.User;
 import jakarta.persistence.*;
 import lombok.*;

@@ -101,7 +101,7 @@ El sistema de créditos garantiza que las transacciones sean seguras: al program
 
 ```
 ┌─────────────┐       ┌──────────────────┐       ┌──────────────────┐
-│    users    │1─────n│     skills       │       │ exchange_requests │
+│    users    │1─────n│     skills       │       │ exchange_requests│
 │─────────────│       │──────────────────│       │──────────────────│
 │ id (PK)     │       │ id (PK)          │       │ id (PK)          │
 │ email       │       │ user_id (FK)     │  ┌──n─│ requester_id(FK) │
@@ -118,13 +118,13 @@ El sistema de créditos garantiza que las transacciones sean seguras: al program
        └──────────────────────────┐         │    │ id (PK)          │
                                   │         │    │ exchange_id (FK) │
                                   │         │    │ sender_id (FK)   │
-                            ┌─────▼──────── ┘    │ content          │
-                            │    sessions        │ message_type     │
-                            │────────────────    │ created_at       │
-                            │ id (PK)            └──────────────────┘
-                            │ exchange_id (FK)
-                            │ teacher_id (FK)            ┌────────────────────┐
-                            │ student_id (FK)            │ credit_transactions│
+                            ┌─────▼──────── ┘───┐│ content          │
+                            │    sessions       ││ message_type     │
+                            │────────────────   ││ created_at       │
+                            │ id (PK)           │└──────────────────┘
+                            │ exchange_id (FK)  │
+                            │ teacher_id (FK)   │        ┌────────────────────┐
+                            │ student_id (FK)   │        │ credit_transactions│
                             │ topic             1────────│────────────────────│
                             │ scheduled_at      │        │ id (PK)            │
                             │ duration_min      │        │ from_user_id (FK)  │
@@ -244,3 +244,41 @@ OnlySwapX logró implementar un backend funcional y completo para una plataforma
 
 ## Apéndices
 
+### Estructura del Proyecto
+
+```bash
+src/main/java/com/onlyswapx
+├── auth
+│   ├── controller
+│   ├── service
+│   ├── dto
+│   └── security
+├── user
+├── skill
+├── exchange
+├── session
+├── credit
+├── message
+├── config
+└── events
+
+```
+
+La organización modular por dominios permitió separar claramente las responsabilidades del sistema, facilitando el mantenimiento, la escalabilidad y el trabajo paralelo entre los integrantes del equipo.
+
+### Variables de Entorno
+
+El proyecto utiliza variables de entorno para desacoplar la configuración sensible del código fuente. A continuación se muestra una configuración base genérica utilizada durante el desarrollo:
+```bash
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=onlyswapx
+DB_USER=postgres
+DB_PASSWORD=postgres
+
+JWT_SECRET=aqui_va_tu_llave
+JWT_EXPIRATION=86400000
+
+GEMINI_API_KEY=your_api_key
+```
+Estas variables son cargadas desde el entorno de ejecución y utilizadas para la conexión con PostgreSQL, la firma de tokens JWT y la integración con la API de Google Gemini.

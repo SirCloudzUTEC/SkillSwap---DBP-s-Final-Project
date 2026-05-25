@@ -244,41 +244,30 @@ OnlySwapX logró implementar un backend funcional y completo para una plataforma
 
 ## Apéndices
 
-### Estructura del Proyecto
+### Licencia
+Este proyecto se distribuye bajo la licencia MIT.  
+El texto completo de la licencia se encuentra en el archivo `LICENSE` ubicado en la raíz del repositorio.
 
-```bash
-src/main/java/com/onlyswapx
-├── auth
-│   ├── controller
-│   ├── service
-│   ├── dto
-│   └── security
-├── user
-├── skill
-├── exchange
-├── session
-├── credit
-├── message
-├── config
-└── events
+MIT License
 
-```
+Copyright (c) 2025 Diego Fabricio Godoy Torres, Guillermo Valentino Ceceu Gamboa Sanchez,
+Leonardo Jesús Medina Gago, Pedro Nicolas Solis Cordova, Thiago Frias Pinto
 
-La organización modular por dominios permitió separar claramente las responsabilidades del sistema, facilitando el mantenimiento, la escalabilidad y el trabajo paralelo entre los integrantes del equipo.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### Variables de Entorno
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-El proyecto utiliza variables de entorno para desacoplar la configuración sensible del código fuente. A continuación se muestra una configuración base genérica utilizada durante el desarrollo:
-```bash
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=onlyswapx
-DB_USER=postgres
-DB_PASSWORD=postgres
-
-JWT_SECRET=aqui_va_tu_llave
-JWT_EXPIRATION=86400000
-
-GEMINI_API_KEY=your_api_key
-```
-Estas variables son cargadas desde el entorno de ejecución y utilizadas para la conexión con PostgreSQL, la firma de tokens JWT y la integración con la API de Google Gemini.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+© 2026 OnlySwapX Team
